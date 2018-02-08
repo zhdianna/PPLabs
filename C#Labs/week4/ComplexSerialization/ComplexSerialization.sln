@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexSerialization", "ComplexSerialization\ComplexSerialization.csproj", "{09CC05E3-7ADE-47A8-97CB-9302D898C0FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09CC05E3-7ADE-47A8-97CB-9302D898C0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09CC05E3-7ADE-47A8-97CB-9302D898C0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09CC05E3-7ADE-47A8-97CB-9302D898C0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09CC05E3-7ADE-47A8-97CB-9302D898C0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CA2DB5D-8917-4BB3-BE18-4CD25805098D}
+	EndGlobalSection
+EndGlobal

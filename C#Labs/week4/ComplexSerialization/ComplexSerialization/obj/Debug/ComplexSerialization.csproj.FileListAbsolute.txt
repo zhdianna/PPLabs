@@ -1,0 +1,2 @@
+C:\Users\dianna\Desktop\ComplexSerialization\ComplexSerialization\obj\Debug\ComplexSerialization.csprojResolveAssemblyReference.cache
+C:\Users\dianna\Desktop\ComplexSerialization\ComplexSerialization\obj\Debug\ComplexSerialization.csproj.CoreCompileInputs.cache
