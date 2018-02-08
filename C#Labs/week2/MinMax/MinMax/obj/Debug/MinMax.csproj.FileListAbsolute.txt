@@ -1,0 +1,7 @@
+C:\Users\dianna\Desktop\MinMax\MinMax\bin\Debug\MinMax.exe.config
+C:\Users\dianna\Desktop\MinMax\MinMax\bin\Debug\MinMax.exe
+C:\Users\dianna\Desktop\MinMax\MinMax\bin\Debug\MinMax.pdb
+C:\Users\dianna\Desktop\MinMax\MinMax\obj\Debug\MinMax.csprojResolveAssemblyReference.cache
+C:\Users\dianna\Desktop\MinMax\MinMax\obj\Debug\MinMax.csproj.CoreCompileInputs.cache
+C:\Users\dianna\Desktop\MinMax\MinMax\obj\Debug\MinMax.exe
+C:\Users\dianna\Desktop\MinMax\MinMax\obj\Debug\MinMax.pdb

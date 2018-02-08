@@ -1,0 +1,7 @@
+C:\Users\dianna\Desktop\Rectangle\Rectangle\bin\Debug\Rectangle.exe.config
+C:\Users\dianna\Desktop\Rectangle\Rectangle\bin\Debug\Rectangle.exe
+C:\Users\dianna\Desktop\Rectangle\Rectangle\bin\Debug\Rectangle.pdb
+C:\Users\dianna\Desktop\Rectangle\Rectangle\obj\Debug\Rectangle.csprojResolveAssemblyReference.cache
+C:\Users\dianna\Desktop\Rectangle\Rectangle\obj\Debug\Rectangle.csproj.CoreCompileInputs.cache
+C:\Users\dianna\Desktop\Rectangle\Rectangle\obj\Debug\Rectangle.exe
+C:\Users\dianna\Desktop\Rectangle\Rectangle\obj\Debug\Rectangle.pdb

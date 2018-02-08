@@ -1,0 +1,7 @@
+C:\Users\dianna\Desktop\Prime\Prime\obj\Debug\Prime.csprojResolveAssemblyReference.cache
+C:\Users\dianna\Desktop\Prime\Prime\obj\Debug\Prime.csproj.CoreCompileInputs.cache
+C:\Users\dianna\Desktop\Prime\Prime\bin\Debug\Prime.exe.config
+C:\Users\dianna\Desktop\Prime\Prime\bin\Debug\Prime.exe
+C:\Users\dianna\Desktop\Prime\Prime\bin\Debug\Prime.pdb
+C:\Users\dianna\Desktop\Prime\Prime\obj\Debug\Prime.exe
+C:\Users\dianna\Desktop\Prime\Prime\obj\Debug\Prime.pdb

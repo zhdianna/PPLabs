@@ -1,0 +1,7 @@
+C:\Users\dianna\Desktop\MinOfPrimes\MinOfPrimes\bin\Debug\MinOfPrimes.exe.config
+C:\Users\dianna\Desktop\MinOfPrimes\MinOfPrimes\bin\Debug\MinOfPrimes.exe
+C:\Users\dianna\Desktop\MinOfPrimes\MinOfPrimes\bin\Debug\MinOfPrimes.pdb
+C:\Users\dianna\Desktop\MinOfPrimes\MinOfPrimes\obj\Debug\MinOfPrimes.csprojResolveAssemblyReference.cache
+C:\Users\dianna\Desktop\MinOfPrimes\MinOfPrimes\obj\Debug\MinOfPrimes.csproj.CoreCompileInputs.cache
+C:\Users\dianna\Desktop\MinOfPrimes\MinOfPrimes\obj\Debug\MinOfPrimes.exe
+C:\Users\dianna\Desktop\MinOfPrimes\MinOfPrimes\obj\Debug\MinOfPrimes.pdb

@@ -1,0 +1,7 @@
+C:\Users\dianna\Desktop\Complex\Complex\bin\Debug\Complex.exe.config
+C:\Users\dianna\Desktop\Complex\Complex\bin\Debug\Complex.exe
+C:\Users\dianna\Desktop\Complex\Complex\bin\Debug\Complex.pdb
+C:\Users\dianna\Desktop\Complex\Complex\obj\Debug\Complex.csprojResolveAssemblyReference.cache
+C:\Users\dianna\Desktop\Complex\Complex\obj\Debug\Complex.csproj.CoreCompileInputs.cache
+C:\Users\dianna\Desktop\Complex\Complex\obj\Debug\Complex.exe
+C:\Users\dianna\Desktop\Complex\Complex\obj\Debug\Complex.pdb
