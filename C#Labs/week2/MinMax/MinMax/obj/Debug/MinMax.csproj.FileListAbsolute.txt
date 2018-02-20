@@ -5,3 +5,10 @@ C:\Users\dianna\Desktop\MinMax\MinMax\obj\Debug\MinMax.csprojResolveAssemblyRefe
 C:\Users\dianna\Desktop\MinMax\MinMax\obj\Debug\MinMax.csproj.CoreCompileInputs.cache
 C:\Users\dianna\Desktop\MinMax\MinMax\obj\Debug\MinMax.exe
 C:\Users\dianna\Desktop\MinMax\MinMax\obj\Debug\MinMax.pdb
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week2\MinMax\MinMax\bin\Debug\MinMax.exe.config
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week2\MinMax\MinMax\bin\Debug\MinMax.exe
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week2\MinMax\MinMax\bin\Debug\MinMax.pdb
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week2\MinMax\MinMax\obj\Debug\MinMax.csprojResolveAssemblyReference.cache
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week2\MinMax\MinMax\obj\Debug\MinMax.csproj.CoreCompileInputs.cache
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week2\MinMax\MinMax\obj\Debug\MinMax.exe
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week2\MinMax\MinMax\obj\Debug\MinMax.pdb

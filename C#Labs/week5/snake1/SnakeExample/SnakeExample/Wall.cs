@@ -58,7 +58,7 @@ namespace SnakeExample
             }
             return true;
         }
-
+        
         public Boolean CheckWallForSnake(int x, int y)
         {
             int row = 0;
@@ -79,6 +79,7 @@ namespace SnakeExample
             //Console.Write(line.Length);
             return true;
         }
+        
 
 
         public void Draw()

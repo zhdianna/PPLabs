@@ -2,66 +2,98 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SnakeExample
 {
     class Program
     {
-        static void Main(string[] args)
+
+        // public static int direction = 1;
+
+        /*public static void MoveFaster()
         {
-            Console.CursorVisible = false;
-            Console.SetWindowSize(70, 20);
+            while (!Game.GameOver)
+            {
+                switch (direction)
+                {
+                    case 1:
+                        Game.snake.Move(1, 0);
+                        break;
+                    case 2:
+                        Game.snake.Move(-1, 0);
+                        break;
+                    case 3:
+                        Game.snake.Move(-1, 0);
+                        break;
+                    case 4:
+                        Game.snake.Move(0, -1);
+                        break;
+                }
 
-            Snake snake = new Snake();
-            Food food = new Food();
-            Wall wall = new Wall();
+                Game.Draw();
+                Thread.Sleep(100);
 
-            if (!snake.Collision()) {
-                Console.Clear();
 
             }
+            */
 
 
+        static void Main(string[] args)
+        {
+
+            Game.Init();
+
+
+            //Thread t = new Thread(MoveFaster); // - making new thread
+            //t.Start();
 
             ConsoleKeyInfo lastKey = Console.ReadKey();
-            while (true)
+
+            while (!Game.GameOver)
             {
-                Console.Clear();
-                snake.Draw();
-                food.Draw();
-                wall.Draw();
+                Game.Draw();
 
                 ConsoleKeyInfo btn = Console.ReadKey();
-                
+
 
                 if (lastKey.Key == ConsoleKey.UpArrow)// если вверх
 
                 {
+                    
 
                     switch (btn.Key) // создаем положительные случаи
 
                     {
 
                         case ConsoleKey.UpArrow: // идти вверх
+                                                 // direction = 4;
+                            Game.snake.Move(0, -1);
 
-                            snake.Move(0, -1);
+                            break;
+
+                        case ConsoleKey.DownArrow:
+                            // direction = 3;
+                            Game.snake.Move(-1, 0);
 
                             break;
 
                         case ConsoleKey.RightArrow: // идти вправо
-
-                            snake.Move(1, 0);
+                            //direction = 1;
+                            Game.snake.Move(1, 0);
 
                             break;
 
                         case ConsoleKey.LeftArrow: // идти влево
+                                                   // direction = 2;
 
-                            snake.Move(-1, 0);
+                            Game.snake.Move(-1, 0);
 
                             break;
 
                     }
+
 
                 }
 
@@ -75,21 +107,24 @@ namespace SnakeExample
 
                         case ConsoleKey.DownArrow: // вниз
 
-                            snake.Move(0, 1);
+                            Game.snake.Move(0, 1);
 
                             break;
 
+
+
                         case ConsoleKey.RightArrow: // вправо
 
-                            snake.Move(1, 0);
+                            Game.snake.Move(1, 0);
 
                             break;
 
                         case ConsoleKey.LeftArrow: // влево
 
-                            snake.Move(-1, 0);
+                            Game.snake.Move(-1, 0);
 
                             break;
+
 
                     }
 
@@ -105,19 +140,19 @@ namespace SnakeExample
 
                         case ConsoleKey.UpArrow: // вверх
 
-                            snake.Move(0, -1);
+                            Game.snake.Move(0, -1);
 
                             break;
 
                         case ConsoleKey.DownArrow: // вниз
 
-                            snake.Move(0, 1);
+                            Game.snake.Move(0, 1);
 
                             break;
 
                         case ConsoleKey.LeftArrow: // влево
 
-                            snake.Move(-1, 0);
+                            Game.snake.Move(-1, 0);
 
                             break;
 
@@ -128,6 +163,7 @@ namespace SnakeExample
                 else if (lastKey.Key == ConsoleKey.RightArrow) // если вправо
 
                 {
+                   
 
                     switch (btn.Key)
 
@@ -135,25 +171,27 @@ namespace SnakeExample
 
                         case ConsoleKey.UpArrow: // вверх
 
-                            snake.Move(0, -1);
+                            Game.snake.Move(0, -1);
 
                             break;
 
                         case ConsoleKey.DownArrow: // вниз
 
-                            snake.Move(0, 1);
+                            Game.snake.Move(0, 1);
 
                             break;
 
                         case ConsoleKey.RightArrow: // вправо
 
-                            snake.Move(1, 0);
+                            Game.snake.Move(1, 0);
 
                             break;
 
                     }
 
                 }
+
+
                 if (btn.Key == ConsoleKey.LeftArrow && lastKey.Key != ConsoleKey.RightArrow) // невозможные случаи
 
                     lastKey = btn;
@@ -170,6 +208,13 @@ namespace SnakeExample
 
                     lastKey = btn;
 
+
+
+                if (btn.Key == ConsoleKey.S) //- serilization method
+                    Game.Seer();
+
+                if (btn.Key == ConsoleKey.D)
+                    Game.Deeser();
 
                 /*switch (btn.Key)
                 {
@@ -197,26 +242,31 @@ namespace SnakeExample
                 }
                 */
 
-                if (snake.body[0].x > 69)
-                    snake.body[0].x = 0;
-                if (snake.body[0].x < 0)
-                    snake.body[0].x = 69;
+                if (Game.snake.body[0].x > 69)
+                    Game.snake.body[0].x = 0;
+                if (Game.snake.body[0].x < 0)
+                    Game.snake.body[0].x = 69;
 
-                if (snake.body[0].y > 19)
-                    snake.body[0].y = 0;
-                if (snake.body[0].y < 0)
-                    snake.body[0].y = 19;
+                if (Game.snake.body[0].y > 19)
+                    Game.snake.body[0].y = 0;
+                if (Game.snake.body[0].y < 0)
+                    Game.snake.body[0].y = 19;
 
 
 
-                if (snake.Eat(food))
+                if (Game.snake.Eat(Game.food))
                 {
-                    food.SetRandomPosition();
+                    Game.food.SetRandomPosition();
                 }
 
             }
 
-            
+
+
+
+
         }
+
     }
-}
+    }
+

@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SnakeExample
-{
+
+{   [Serializable]
     class Snake
     {
         public List<Point> body;
@@ -31,24 +34,26 @@ namespace SnakeExample
             Console.Write(' ');
             */
 
-            for(int i = body.Count - 1; i > 0; i--)
+            for (int i = body.Count - 1; i > 0; i--)
             {
-                
-                    body[i].x = body[i - 1].x;
-                    body[i].y = body[i - 1].y;
-                
-             
+
+                body[i].x = body[i - 1].x;
+                body[i].y = body[i - 1].y;
+
+
             }
 
             body[0].x = body[0].x + dx;
             body[0].y = body[0].y + dy;
-            
+
+            //  Game.GameOverMethod();
+
 
         }
 
         public bool Eat(Food food)
         {
-            if(body[0].x == food.location.x 
+            if (body[0].x == food.location.x
                 && body[0].y == food.location.y)
             {
                 body.Add(new Point(body[body.Count - 1].x, body[body.Count - 1].y));
@@ -57,38 +62,43 @@ namespace SnakeExample
             return false;
         }
 
-        public Boolean Collision()
-        {
-            bool notOk = true;
+        /* public Boolean Collision()
+          {
+              bool notOk = true;
 
-            for (int i = 2; i < 15; i++)
-            {
-                if (body[0].x == 12 && body[0].y == i)
-                {
-                    Console.Clear();
+              for (int i = 2; i < 15; i++)
+              {
+                  if (body[0].x == 12 && body[0].y == i)
+                  {
+                      Console.Clear();
 
-                    Console.SetCursorPosition(30, 11);
+                      Console.SetCursorPosition(30, 11);
 
-                    Console.Write("GAME OVER!!");
-                    return false;
-                }
+                      Console.Write("GAME OVER!!");
+                      return false;
+                  }
 
-            }
+              }
 
 
-            for (int i = 12; i < 25; i++)
-            {
-                if (body[0].x == i && body[0].y == 1)
-                {
-                    Console.Clear();
-                    Console.SetCursorPosition(30, 11);
 
-                    Console.Write("GAME OVER!!");
-                    return false;
-                }
-            }
-            return true;
-        }
+              for (int i = 12; i < 25; i++)
+              {
+                  if (body[0].x == i && body[0].y == 1)
+                  {
+                      Console.Clear();
+                      Console.SetCursorPosition(30, 11);
+
+                      Console.Write("GAME OVER!!");
+
+                      return false;
+
+                  }
+              }
+              return true;
+          }
+          */
+    
 
 
         public void Draw()
@@ -139,8 +149,103 @@ namespace SnakeExample
             }
             */
 
-            Collision();
+           // Collision();
+
+
+
            
         }
+        public static void f1()
+
+        {
+
+            FileStream fs = new FileStream(@"snake.ser", FileMode.Create, FileAccess.Write);
+
+
+
+            
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+            try
+
+            {
+
+                bf.Serialize(fs, Game.snake);
+
+            }
+
+            catch (Exception e)
+
+            {
+
+                Console.WriteLine(e.Message);
+
+            }
+
+            finally
+
+            {
+
+                fs.Close();
+
+            }
+
+            
+
+
+
+        
+
+        }
+
+        public static void f2()
+
+        {
+
+            FileStream fs = new FileStream(@"snake.ser", FileMode.Open, FileAccess.Read);
+
+            BinaryFormatter bf = new BinaryFormatter();
+
+
+
+            try
+
+            {
+
+                Game.snake = bf.Deserialize(fs) as Snake;
+
+
+                
+
+            }
+
+            catch (Exception e)
+
+            {
+
+                Console.WriteLine(e.Message);
+
+            }
+
+            finally
+
+            {
+
+                fs.Close();
+
+            }
+
+        }
+
+
+
+
+
+
+
     }
-}
+
+
+    }
+

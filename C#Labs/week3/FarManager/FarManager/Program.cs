@@ -164,6 +164,7 @@ namespace FarManager
                             try
                             {
                                 dir = new DirectoryInfo(f.FullName);
+                                pos = 0;
                             }
                             catch (Exception e)
                             {

@@ -5,3 +5,10 @@ C:\Users\dianna\Desktop\PPII2018Spring\W5\G2\SnakeExample\SnakeExample\obj\Debug
 C:\Users\dianna\Desktop\PPII2018Spring\W5\G2\SnakeExample\SnakeExample\obj\Debug\SnakeExample.csproj.CoreCompileInputs.cache
 C:\Users\dianna\Desktop\PPII2018Spring\W5\G2\SnakeExample\SnakeExample\obj\Debug\SnakeExample.exe
 C:\Users\dianna\Desktop\PPII2018Spring\W5\G2\SnakeExample\SnakeExample\obj\Debug\SnakeExample.pdb
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week5\snake1\SnakeExample\SnakeExample\obj\Debug\SnakeExample.csprojResolveAssemblyReference.cache
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week5\snake1\SnakeExample\SnakeExample\obj\Debug\SnakeExample.csproj.CoreCompileInputs.cache
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week5\snake1\SnakeExample\SnakeExample\obj\Debug\SnakeExample.exe
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week5\snake1\SnakeExample\SnakeExample\obj\Debug\SnakeExample.pdb
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week5\snake1\SnakeExample\SnakeExample\bin\Debug\SnakeExample.exe.config
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week5\snake1\SnakeExample\SnakeExample\bin\Debug\SnakeExample.exe
+C:\Users\dianna\Desktop\PPLabs\C#Labs\week5\snake1\SnakeExample\SnakeExample\bin\Debug\SnakeExample.pdb

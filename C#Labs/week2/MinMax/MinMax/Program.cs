@@ -9,6 +9,8 @@ namespace MinMax
 {
     class Program
     {
+        
+        
         static void f1()
         {
             FileStream f = new FileStream(@"C:\Users\dianna\Desktop\minAndmax\text.txt", FileMode.Open, FileAccess.Read);
@@ -16,11 +18,36 @@ namespace MinMax
             StreamWriter ws = new StreamWriter(@"C:\Users\dianna\Desktop\minAndmax\text1.txt");
             string[] all = fs.ReadLine().Split();
 
-            ws.WriteLine("Max is" + all.Max() + "  " + "Min is" + all.Min() );
+            int maxi = int.Parse(all[0]);
+            int mini = int.Parse(all[1]);
+
+            foreach (string s in all) // checking each element
+            {
+                int x = int.Parse(s); // converting to int
+                if (x > maxi)
+                {
+                    maxi = x;
+                }
+
+            }
+
+            foreach(string s in all)
+            {
+                int x = int.Parse(s);
+                if (x < mini) {
+                    mini = x;
+                }
+            }
+
+
+
+
+            ws.WriteLine("Max is" + maxi + "  " + "Min is" + mini );
             fs.Close();
             f.Close();
             ws.Close();
 
+         
 
 
         }
@@ -29,5 +56,8 @@ namespace MinMax
             f1();
             Console.ReadKey();
         }
+        
+
+       
     }
 }

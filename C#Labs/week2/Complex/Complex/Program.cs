@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 
 
-namespace Complex_sum
+namespace ComplexNumbers
 
 {
 
@@ -19,139 +19,57 @@ namespace Complex_sum
 
     {
 
-        int num, denom;
+        public int a;
 
+        public int b;
 
-
-        public Complex() { }
-
-
-
-        public Complex(int _x, int _y)
+        public Complex(int a, int b)
 
         {
 
-            num = _x;
+            this.a = a;
 
-            denom = _y;
+            this.b = b;
 
         }
 
 
 
-        public static int FindGCD(int a, int b)
+        public static Complex operator +(Complex m, Complex n)
 
         {
 
-            int d, r, oldr;
+            int s = (m.a * n.b + m.b * n.a); //1*24 + 3*7=45 
 
-            if (a > b)
+            int d = (m.b * n.b); // 3*24 
 
-            {
+            int u = Nod(s, d); //nod(45,72)=9 
 
-                d = a;
+            Complex p = new Complex(s / u, d / u);
 
-                r = b;
-
-
-
-                while (r != 0)
-
-                {
-
-                    oldr = r;
-
-                    r = d % r;
-
-                    d = oldr;
-
-                }
-
-
-
-                return d;
-
-
-
-            }
-
-            else if (a < b)
-
-            {
-
-                d = b;
-
-                r = a;
-
-
-
-                while (r != 0)
-
-                {
-
-                    oldr = r;
-
-                    r = d % r;
-
-                    d = oldr;
-
-                }
-
-
-
-                return d;
-
-            }
-
-            return a;
+            return p;
 
         }
 
 
 
-        public static Complex operator +(Complex c1, Complex c2)
+        public static int Nod(int x, int y)
 
         {
 
-            Complex n = new Complex();
+            if (y == 0) return x;
 
-
-
-            int gcd, lcm;
-
-
-
-            gcd = FindGCD(c1.denom, c2.denom);
-
-
-
-            lcm = Math.Abs(c1.denom * c2.denom) / gcd;
-
-
-
-            n.denom = lcm;
-
-
-
-            n.num = lcm * c1.num / c1.denom + lcm * c2.num / c2.denom;
-
-
-
-            return n;
+            else return Nod(Math.Min(y, x), Math.Max(x, y) % Math.Min(x, y));
 
         }
-
-
 
         public override string ToString()
 
         {
 
-            return num + "/" + denom;
+            return a + "/" + b;
 
         }
-
-
 
 
 
@@ -165,15 +83,21 @@ namespace Complex_sum
 
         {
 
-            Complex a = new Complex(1, 2);
+            int a = Convert.ToInt16(Console.ReadLine());
 
-            Complex b = new Complex(1, 2);
+            int b = Convert.ToInt16(Console.ReadLine());
 
+            int c = Convert.ToInt16(Console.ReadLine());
 
+            int d = Convert.ToInt16(Console.ReadLine());
 
-            Console.WriteLine(a + b);
+            Complex result1 = new Complex(a, b);
 
+            Complex result2 = new Complex(c, d);
 
+            Complex result = result1 + result2;
+
+            Console.WriteLine(result);
 
             Console.ReadKey();
 
