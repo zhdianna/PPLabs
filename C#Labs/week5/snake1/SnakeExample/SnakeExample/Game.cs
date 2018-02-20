@@ -23,10 +23,9 @@ namespace SnakeExample
                 if(snake.body[0].x == wall.body[i].x && snake.body[0].y == wall.body[i].y)
                 {
                     GameOver = true;
-                    //Console.Clear();
+                    Console.Clear();
                     Console.SetCursorPosition(30, 11);
                     Console.WriteLine("Game Over");
-                    Console.Clear();
                     Console.ReadKey();
                 }
             }
